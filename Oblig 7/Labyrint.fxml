@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane xmlns:fx="http://javafx.com/fxml"
+    fx:controller="LabyrintController"
+    stylesheets="Labyrint.css"
+    prefHeight="800.0"
+    prefWidth="700.0">
+
+    <children>
+        <VBox spacing="10" alignment="CENTER" prefHeight="800.0">
+            <children>
+                <GridPane fx:id="ruter" gridLinesVisible="true">
+                </GridPane>
+
+                <Button fx:id="velgFil" text="Velg Labyrintfil" onAction="#velgLabyrintFil"/>
+
+                <HBox spacing="10" alignment="CENTER" prefWidth="700.0">
+                     <children>
+                         <Button fx:id="venstre" styleClass="knapp" text="←" onAction="#endreLosningMotVenstre"/>
+                         <Text fx:id="status" styleClass="status" text="Velg en rute"/>
+                         <Button fx:id="hoyre" styleClass="knapp" text="→" onAction="#endreLosningMotHoyre"/>
+                     </children>
+                 </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

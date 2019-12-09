@@ -1,0 +1,24 @@
+.rute {
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.sort {
+    -fx-background-color: #202020;
+}
+
+.hvit {
+    -fx-background-color: #FFFFFF;
+}
+
+.markert {
+    -fx-background-color: #E91E63;
+}
+
+.status {
+
+}
+
+.knapp {
+
+}
